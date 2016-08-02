@@ -1,0 +1,21 @@
+{
+  "name": "@phoenixmusical/server",
+  "version": "0.0.0",
+  "description": "Phoenix Musical's Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fgascon",
+  "license": "MIT",
+  "dependencies": {
+    "connect-session-knex": "^1.0.23",
+    "express": "^4.14.0",
+    "express-graphql": "^0.5.3",
+    "express-session": "^1.14.0",
+    "graphql": "^0.6.2",
+    "knex": "^0.11.9",
+    "mysql": "^2.11.1",
+    "s-conf": "0.0.0"
+  }
+}
