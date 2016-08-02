@@ -1,12 +1,20 @@
 {
-  "name": "@phoenixmusical/server",
+  "name": "@phoenixmusical/api",
   "version": "0.0.0",
-  "description": "Phoenix Musical's Server",
+  "description": "Phoenix Musical's API Server",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phoenixmusical/api.git"
+  },
   "author": "fgascon",
+  "bugs": {
+    "url": "https://github.com/phoenixmusical/api/issues"
+  },
+  "homepage": "https://github.com/phoenixmusical/api#readme",
   "license": "MIT",
   "dependencies": {
     "connect-session-knex": "^1.0.23",
