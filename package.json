@@ -4,7 +4,8 @@
   "description": "Phoenix Musical's API Server",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js config.json"
+    "start": "node index.js config.json",
+    "set-password": "node scripts/set-password config.json"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,11 @@
   "homepage": "https://github.com/phoenixmusical/api#readme",
   "license": "MIT",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.15.2",
     "connect-session-knex": "^1.0.23",
+    "cookie-parser": "^1.4.3",
+    "ejs-mate": "^2.3.0",
     "express": "^4.14.0",
     "express-graphql": "^0.5.3",
     "express-session": "^1.14.0",
@@ -25,6 +30,9 @@
     "graphql-relay": "^0.4.3",
     "knex": "^0.11.9",
     "mysql": "^2.11.1",
-    "s-conf": "0.0.0"
+    "s-conf": "^1.0.0"
+  },
+  "devDependencies": {
+    "inquirer": "^1.2.1"
   }
 }
