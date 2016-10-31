@@ -1,35 +1,24 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-	<meta charset="utf-8">
-	<title>PhoenixMusical.ca/membres</title>
-    <link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
-</head>
-<body>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>PhoenixMusical<small>.ca/membres</small></h1>
-			<div id="login-form">
-				<form class="form" method="post">
-					<% errors.forEach(function(error){ %>
-					<div class="alert alert-danger">
-						<%= error %>
-					</div>
-					<% }) %>
-					<div class="form-group">
-						<label for="email">Courriel</label>
-						<input type="text" class="form-control" name="email" value="<%= email %>">
-					</div>
-					<div class="form-group">
-						<label for="password">Mot de passe</label>
-						<input type="password" class="form-control" name="password">
-					</div>
-					<div class="actions">
-						<input type="submit" class="btn btn-primary" value="Connexion">
-					</div>
-				</form>
+<% layout('layout') -%>
+<div class="jumbotron">
+	<h1>PhoenixMusical<small>.ca/membres</small></h1>
+	<div id="login-form">
+		<form class="form" method="post">
+			<% errors.forEach(function(error){ %>
+			<div class="alert alert-danger">
+				<%= error %>
 			</div>
-		</div>
+			<% }) %>
+			<div class="form-group">
+				<label for="email">Courriel</label>
+				<input type="text" class="form-control" name="email" value="<%= email %>">
+			</div>
+			<div class="form-group">
+				<label for="password">Mot de passe</label>
+				<input type="password" class="form-control" name="password">
+			</div>
+			<div class="actions">
+				<input type="submit" class="btn btn-primary" value="Connexion">
+			</div>
+		</form>
 	</div>
-</body>
-</html>
+</div>
